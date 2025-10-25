@@ -172,3 +172,94 @@ nav a:hover {
     font-size: 0.9em;
     font-weight: 600;
 }
+
+.batik-manes {
+    background-color: #3b1e12;
+    color: #f2d7b3;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.batik-manes h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.batik-manes h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.batik-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.batik-images img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.batik-manes p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.koleksi-batik {
+    background-color: #4b2600;
+    color: #f2d7b3;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.koleksi-batik h2 {
+    font-size: 2.3em;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.koleksi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.koleksi-grid img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.koleksi-grid img:hover {
+    transform: scale(1.05);
+}
+
+.btn-gallery {
+    display: inline-block;
+    background-color: #f2b705;
+    color: #4b2600;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-gallery:hover {
+    background-color: #ffca33;
+}
