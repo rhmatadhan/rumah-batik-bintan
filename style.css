@@ -53,11 +53,12 @@ nav a:hover {
 .hero h3 {
     font-weight: 300;
     font-size: 25px;
+    margin-bottom: 30px;
 }
 
 .hero h1 {
     font-size: 100px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .hero p {
@@ -119,7 +120,7 @@ nav a:hover {
 }
 
 #about h2 {
-    font-size: 1.8em;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 40px;
 }
@@ -138,13 +139,14 @@ nav a:hover {
 }
 
 .about-text p {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 25px;
+    line-height: 1.5;
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .about-image img {
-    width: 320px;
+    width: 350px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
@@ -163,7 +165,7 @@ nav a:hover {
     text-align: center;
 }
 
-.icon-item span {
+.icon-item span{
     font-size: 1.8em;
     margin-bottom: 5px;
 }
@@ -174,7 +176,7 @@ nav a:hover {
 }
 
 .batik-manes {
-    background-color: #3b1e12;
+    background-color: #5b2c1e;
     color: #f2d7b3;
     text-align: center;
     padding: 50px 20px;
@@ -208,7 +210,7 @@ nav a:hover {
 }
 
 .batik-manes p {
-    font-size: 1em;
+    font-size: 20px;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
@@ -216,32 +218,41 @@ nav a:hover {
 }
 
 .koleksi-batik {
-    background-color: #4b2600;
+    background-color: #5b2c1e;
     color: #f2d7b3;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px 60px;
 }
 
 .koleksi-batik h2 {
-    font-size: 2.3em;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.koleksi-batik h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
     font-weight: normal;
-    margin-bottom: 40px;
+    text-align: left;
 }
 
 .koleksi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
     justify-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    margin: 0px 200px;
 }
 
 .koleksi-grid img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
+    width: 95%; 
+    max-width: 200px;
+    border-radius: 8px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
     transition: transform 0.3s ease;
 }
 
@@ -250,6 +261,7 @@ nav a:hover {
 }
 
 .btn-gallery {
+    margin-top: 35px;
     display: inline-block;
     background-color: #f2b705;
     color: #4b2600;
@@ -262,4 +274,71 @@ nav a:hover {
 
 .btn-gallery:hover {
     background-color: #ffca33;
+}
+
+.eduwisata {
+    background-color: #f2d7b3;
+    color: #4b2600;
+    padding: 60px 20px;
+}
+
+.eduwisata-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.eduwisata-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.eduwisata-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.eduwisata-text {
+    max-width: 500px;
+}
+
+.eduwisata-text h2 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.eduwisata-text p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.eduwisata-text ul {
+    text-align: left;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.btn-eduwisata {
+    display: inline-block;
+    background-color: #4b2600;
+    color: #f2d7b3;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-eduwisata:hover {
+    background-color: #6e3a00;
 }
