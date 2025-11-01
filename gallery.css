@@ -1,37 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
 body {
-    margin: 0; /* Hilangkan jarak default di tepi halaman */
-    font-family: 'Sora', sans-serif; /* Gunakan font Sora untuk seluruh teks */
-    background-color: #fff8ec; /* Warna latar belakang lembut */
+    color: #fff;
+    background-color: #fff;
 }
 
-/* Bagian navbar utama di atas halaman */
-.navbar {
-    background-color: #491F00; /* Warna coklat tua untuk navbar */
-    color: white; /* Warna teks putih */
-    display: flex; /* Gunakan flexbox untuk tata letak horizontal */
-    justify-content: space-between; /* Jarak antara logo dan menu */
-    align-items: center; /* Rata vertikal di tengah */
-    padding: 15px 40px; /* Jarak dalam atas-bawah 15px, kiri-kanan 40px */
-    font-size: 32px; /* Ukuran font besar */
+nav {
+    background-color: #5b2c1e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-/* Style untuk tautan (link) dalam navbar */
-.navbar ul li a {
-    color: #FFE2B5; /* Warna teks krem */
-    text-decoration: none; /* Hilangkan garis bawah */
-    font-weight: 500; /* Sedikit tebal */
+.logo {
+    height: 55px;
+    width: 65px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Efek hover pada link di navbar */
-.navbar ul li a:hover {
-    text-decoration: underline; /* Muncul garis bawah saat dihover */
-    color: #fff; /* Warna berubah jadi putih */
-}
-
-/* Style untuk logo di navbar */
 .logo img {
-    width: 150px; /* Lebar logo */
-    height: auto; /* Tinggi otomatis sesuai rasio */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
 }
 
 /* Style untuk heading utama (judul besar) */
@@ -70,11 +91,11 @@ body {
 .hero {
     background: #ffe2b5;                        /* Warna latar dasar */
     text-align: center;                           /* Konten di tengah */
-    width: 97%;                                  /* Lebar tetap (sebaiknya ubah ke 100% agar responsif) */
+    width: 100%;                                  /* Lebar tetap (sebaiknya ubah ke 100% agar responsif) */
     background-repeat: repeat-x;                  /* Gambar diulang secara horizontal */
     background-position: bottom;                  /* Posisi gambar di bawah */
     background-color: #ffe2b5;                  /* Warna latar cadangan */
-    background-image: url('/rumah-batik-bintan/Image/Hero Section.png'); /* Gambar hero */
+    background-image: url('/Image/Hero Section.png'); /* Gambar hero */
     background-repeat: no-repeat;                 /* Tidak diulang */
     background-position: center;                  /* Letak di tengah */
     background-size: cover;                       /* Penuhi seluruh area */
