@@ -1,0 +1,273 @@
+body {
+    margin: 0; /* Hilangkan jarak default di tepi halaman */
+    font-family: 'Sora', sans-serif; /* Gunakan font Sora untuk seluruh teks */
+    background-color: #fff8ec; /* Warna latar belakang lembut */
+}
+
+/* Bagian navbar utama di atas halaman */
+.navbar {
+    background-color: #491F00; /* Warna coklat tua untuk navbar */
+    color: white; /* Warna teks putih */
+    display: flex; /* Gunakan flexbox untuk tata letak horizontal */
+    justify-content: space-between; /* Jarak antara logo dan menu */
+    align-items: center; /* Rata vertikal di tengah */
+    padding: 15px 40px; /* Jarak dalam atas-bawah 15px, kiri-kanan 40px */
+    font-size: 32px; /* Ukuran font besar */
+}
+
+/* Style untuk tautan (link) dalam navbar */
+.navbar ul li a {
+    color: #FFE2B5; /* Warna teks krem */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: 500; /* Sedikit tebal */
+}
+
+/* Efek hover pada link di navbar */
+.navbar ul li a:hover {
+    text-decoration: underline; /* Muncul garis bawah saat dihover */
+    color: #fff; /* Warna berubah jadi putih */
+}
+
+/* Style untuk logo di navbar */
+.logo img {
+    width: 150px; /* Lebar logo */
+    height: auto; /* Tinggi otomatis sesuai rasio */
+}
+
+/* Style untuk heading utama (judul besar) */
+.hero h1 {
+    color: #491F00; /* Warna teks coklat tua */
+    text-align: center; /* Rata tengah */
+    font-family: 'Sora', sans-serif; /* Gunakan font yang sama */
+    font-size: 96px; /* Ukuran besar */
+}
+
+/* Style untuk paragraf umum */
+.hero p {
+    color: #491F00; /* Warna teks */
+    text-align: center; /* Rata tengah */
+    font-family: 'Sora', sans-serif;
+    font-size: 32px; /* Ukuran besar */
+    font-weight: bold; /* Tebal */
+}
+
+/* Mengatur tata letak list di navbar */
+.navbar ul {
+    list-style: none; /* Hilangkan tanda bullet */
+    justify-content: flex-end; /* Elemen diarahkan ke kanan */
+    align-items: center; /* Rata tengah secara vertikal */
+    display: flex; /* Flexbox untuk sejajar */
+    gap: 40px; /* Jarak antar item menu */
+}
+
+/* Efek hover tambahan untuk semua link di navbar */
+.navbar a:hover {
+    text-decoration: underline;                   /* Garis bawah saat hover */
+    color: #e3c394;                             /* Warna sedikit lebih terang */
+}
+
+/* Bagian hero (bagian utama di atas halaman) */
+.hero {
+    background: #ffe2b5;                        /* Warna latar dasar */
+    text-align: center;                           /* Konten di tengah */
+    width: 97%;                                  /* Lebar tetap (sebaiknya ubah ke 100% agar responsif) */
+    background-repeat: repeat-x;                  /* Gambar diulang secara horizontal */
+    background-position: bottom;                  /* Posisi gambar di bawah */
+    background-color: #ffe2b5;                  /* Warna latar cadangan */
+    background-image: url('/rumah-batik-bintan/Image/Hero Section.png'); /* Gambar hero */
+    background-repeat: no-repeat;                 /* Tidak diulang */
+    background-position: center;                  /* Letak di tengah */
+    background-size: cover;                       /* Penuhi seluruh area */
+    padding: 150px 20px;                          /* Jarak dalam yang luas */
+    color: #491F00;                             /* Warna teks */
+}
+
+/* Bagian galeri (kumpulan gambar) */
+.galeri {
+  background-color: #4b1e00; /* Warna coklat tua */
+  color: #ffe2b5;                              /* Warna teks krem terang */
+  text-align: center;                            /* Konten di tengah */
+  padding: 40px 20px;                            /* Ruang dalam atas-bawah 40px, sisi 20px */
+}
+
+/* Judul di bagian galeri */
+.galeri h1 {
+    font-family: 'Sora', sans-serif;
+    color: FFE2B5;
+    margin-bottom: 32px;   
+    font-size: 96px;                    
+}
+
+.galeri p {
+    font-family: 'Sora', sans-serif;
+    color: FFE2B5;
+  margin-bottom: 32px;   
+  font-size: 32px;  
+}
+
+/* Container yang menampung kartu galeri */
+.galeri-container {
+  display: flex;                                /* Susun kartu secara horizontal */
+  overflow-x: auto;                             /* Scroll horizontal bila melampaui lebar */
+  gap: 64px;                                    /* Jarak antar kartu */
+  padding-bottom: 10px;                         /* Jarak bawah agar scroll tidak menutupi konten */
+  scroll-behavior: smooth;                      /* Scroll lembut */
+}
+
+/* Style untuk setiap kartu galeri */
+.card {
+  background-color: #f5d9b0;                  /* Warna dasar kartu */
+  border-radius: 30px;                          /* Sudut melengkung */
+  flex: 0 0 auto;                               /* Kartu tidak menyusut atau melar */
+  width: 602px;                                 /* Lebar tetap */
+  text-align: center;                           /* Konten rata tengah */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);      /* Bayangan lembut */
+}
+
+/* Gambar di dalam kartu */
+.card img {
+  width: 602px;                                 /* Sesuaikan dengan lebar kartu */
+  height: 302px;                                /* Tinggi tetap */
+  border-radius: 30px;                          /* Sudut gambar melengkung */
+  object-fit: cover;                            /* Potong gambar agar proporsional */
+}
+
+/* Teks di dalam kartu */
+.card p {
+  color: #4b1e00;                           /* Warna teks coklat */
+  font-weight: 500;                           /* Sedikit tebal */
+}
+
+
+
+/* Scrollbar khusus untuk browser berbasis WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  height: 10px;                               /* Tinggi scrollbar horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #3e1600;                      /* Warna track (jalur scrollbar) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffe2b5;                      /* Warna bagian yang bisa digeser */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffcc80;                      /* Warna saat kursor di atas scrollbar */
+}
+
+
+/* Video-section */
+.video-section {
+  background-color: #4b1e00; /* Warna dasar sama seperti tema */
+  color: #fff8dc; /* Warna teks krem */
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Sora', sans-serif;
+}
+.video-section h1{
+    font-family: 'Sora', sans-serif;
+    margin-bottom: 32px;   
+    font-size: 96px; 
+    
+
+}
+
+/* Garis kuning di atas dan bawah video */
+.video-section .line {
+  width: 100%; /* Panjang garis */
+  height: 4px; /* Ketebalan garis */
+  background-color: hwb(50 13% 17%); /* Warna kuning lembut */
+  margin: 20px auto; /* Tengah secara horizontal */
+  border-radius: 2px; /* Sedikit melengkung */
+}
+
+/* Container video */
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Agar responsif jika layar kecil */
+  gap: 30px; /* Jarak antar video */
+  margin: 30px 0;
+}
+
+/* Style video */
+.video-container video {
+  width: 400px; /* Ukuran tiap video */
+  height: 250px;
+  border-radius: 20px; /* Sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Bayangan */
+  border: 4px solid #ffe2b5; /* Bingkai krem */
+  background-color: #000; /* Warna latar jika video belum dimuat */
+}
+
+
+
+.footer {
+    display: flex;
+    background-color: #f2d6a2;
+    color: #3e2f20;
+     font-family: "Sora", sans-serif;
+ 
+}
+
+.footer-left img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 25px 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    color: #737373;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.footer-column ul li a {
+    color: #3e2f20;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #737373;
+}
+
+.footer-column ul li a:hover {
+    color: #a56a2f;
+}
+
+.footer-bottom {
+    text-align: right;
+    margin-top: 50px;
+    font-size: 13px;
+    color: #4a3a2a;
+}
+
+.footer-bottom p {
+    font-weight: bold;
+}
+
