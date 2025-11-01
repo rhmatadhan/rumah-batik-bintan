@@ -231,8 +231,7 @@ nav a:hover {
     display: flex;
     background-color: #f2d6a2;
     color: #3e2f20;
-     font-family: "Sora", sans-serif;
- 
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer-left img {
@@ -262,7 +261,6 @@ nav a:hover {
 .footer-column ul {
     list-style: none;
     padding: 0;
-    color: #737373;
 }
 
 .footer-column ul li {
@@ -274,7 +272,6 @@ nav a:hover {
     color: #3e2f20;
     text-decoration: none;
     transition: 0.3s;
-    color: #737373;
 }
 
 .footer-column ul li a:hover {
@@ -291,4 +288,3 @@ nav a:hover {
 .footer-bottom p {
     font-weight: bold;
 }
-
