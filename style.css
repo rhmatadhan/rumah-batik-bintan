@@ -130,7 +130,6 @@ nav a:hover {
     padding: 90px 8%;
     background: #f7d8a4;
     gap: 60px;
-    font-family: "Sora", sans-serif;
 }
 
 .heritage-text {
@@ -548,8 +547,4 @@ nav a:hover {
     margin-top: 50px;
     font-size: 13px;
     color: #4a3a2a;
-}
-
-.footer-bottom p {
-    font-weight: bold;
 }
