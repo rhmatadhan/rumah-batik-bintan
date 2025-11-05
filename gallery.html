@@ -23,9 +23,16 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+            <!-- Tombol ganti bahasa -->
+<button id="lang-toggle" class="lang-btn">
+  <img id="lang-flag" src="https://flagcdn.com/w20/id.png" alt="Indonesia Flag">
+  <span>EN</span>
+</button>
+</ul>
+</nav>
 </header>
+
+
 
 <!-- ===== HERO SECTION ===== -->
 <section class="gallery-hero">
@@ -126,7 +133,7 @@
                 <h3>Social Media</h3>
                 <ul>
                 <li><a href="https://www.instagram.com/rumahbatik_bintan" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/miko.jatmiko.458544" target="_blank">Facebook</a></li>
+                <li><a href="https://www.facebook.com/share/1BPKWbfXxm/" target="_blank">Facebook</a></li>
                 <li><a href="https://www.tiktok.com/@rumah.batik.binta" target="_blank">Tiktok</a></li>
                 </ul>
             </div>
@@ -146,5 +153,68 @@
         </div>
         </div>
     </footer>
+
+    <!--Language section-->
+    <script>
+  const langBtn = document.getElementById("lang-toggle");
+  const langFlag = document.getElementById("lang-flag");
+  const langText = langBtn.querySelector("span");
+  let currentLang = "id"; // default bahasa Indonesia
+
+  const textContent = {
+    id: {
+      heroTitle: "GALERI KEGIATAN<br>DAN KARYA",
+      heroDesc: "Jejak Perjalanan Kami Melestarikan Batik",
+      kegiatan: "Kegiatan Kami",
+      cards: [
+        "Proses pewarnaan alami menggunakan bahan tradisional khas Bintan.",
+        "Hasil karya batik buatan peserta, simbol kreatvitas dan kecintaan pada budaya.",
+        "Pameran Rumah Batik Bintan, tempat bertemunya karya dan budaya.",
+        "Pengalaman edukatif mengenal warisan batik Bintan bersama generasi muda.",
+        "Sentuhan pertama malam cair diatas kain awal terciptanya motif batik."
+      ],
+      proses: "Proses Membatik <br>Dari Hati",
+      videoText: "Setiap goresan batik lahir dari hati dan filosofi luhur masyarakat Bintan, proses yang menyatu dengan alam dan tradisi.",
+    },
+    en: {
+      heroTitle: "GALLERY OF ACTIVITIES AND WORKS",
+      heroDesc: "Our Journey in Preserving Batik Heritage",
+      kegiatan: "Our Activities",
+      cards: [
+        "Natural dyeing process using traditional Bintan ingredients.",
+        "Participant-made batik works, a symbol of creativity and love for culture.",
+        "Bintan Batik House exhibition, where art and culture meet.",
+        "Educational experience introducing Bintan batik heritage to the young generation.",
+        "The first touch of wax on cloth — the beginning of beautiful batik motifs."
+      ],
+      proses: "Batik Making Process<br>From the Heart",
+      videoText: "Every stroke of batik is born from the heart and the deep philosophy of Bintan’s people, in harmony with nature and tradition.",
+    },
+  };
+
+  langBtn.addEventListener("click", () => {
+    currentLang = currentLang === "id" ? "en" : "id";
+
+    // Ubah teks tombol & bendera
+    if (currentLang === "en") {
+      langFlag.src = "https://flagcdn.com/w20/gb.png";
+      langText.textContent = "ID";
+    } else {
+      langFlag.src = "https://flagcdn.com/w20/id.png";
+      langText.textContent = "EN";
+    }
+
+    // Ubah semua teks di halaman
+    document.querySelector(".hero h1").innerHTML = textContent[currentLang].heroTitle;
+    document.querySelector(".hero p").textContent = textContent[currentLang].heroDesc;
+    document.querySelector(".galeri h1").textContent = textContent[currentLang].kegiatan;
+    document.querySelectorAll(".card p").forEach((el, i) => {
+      el.textContent = textContent[currentLang].cards[i];
+    });
+    document.querySelector(".video-section h1").innerHTML = textContent[currentLang].proses;
+    document.querySelector(".video-section p").textContent = textContent[currentLang].videoText;
+  });
+</script>
+
 </body>
 </html>
