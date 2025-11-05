@@ -17,20 +17,28 @@
             <img src="/Image/logo.png" alt="Logo Batik Bintan">
         </div>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a data-key="nav_home" href="index.html">Beranda</a></li>
+            <li><a data-key="nav_gallery" href="gallery.html">Galeri</a></li>
+            <li><a data-key="nav_contact" href="contact.html">Kontak</a></li>
         </ul>
+        <div class="lang-switch">
+            <select id="languageSwitcher">
+                <option value="id">ID</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+
     </nav>
 
     <!-- HERO SECTION -->
     <section id="home" class="hero">
-        <h3>Enjoy With Art</h3>
-        <h1>RUMAH BATIK BINTAN</h1>
-        <p>Ciptakan Batik Anda Sendiri & Bawa Pulang Karya <br>Autentik dari Bintan</p>
+        <h3 data-key="hero_small">Nikmati Seni</h3>
+        <h1 data-key="hero_main">Rumah Batik Bintan</h1>
+        <p data-key="hero_sub">Ciptakan batikmu & bawa pulang karya autentik</p>
+
         <div class="buttons">
-            <a href="gallery.html" class="btn">Jelajahi Batik Kami</a>
-            <a href="#eduwisata" class="btn btn-outline">Ikuti Kelas Membatik</a>
+            <a href="gallery.html" data-key="btnExplore" class="btn">Jelajahi Batik Kami</a>
+            <a href="#" data-key="btnJoin" class="btn-outline">Ikuti Kelas Membatik</a>
         </div>
         <div class="scroll-hint">
         <p>Scroll</p>
@@ -40,24 +48,24 @@
 
     <section class="heritage-section">
         <div class="heritage-text">
-            <h2>Warisan dalam <br> Setiap Goresan</h2>
-            <p>
+            <h2 data-key="heritage_small">Warisan dalam <br> Setiap Goresan</h2>
+            <p data-key="heritage_main">
                 Digagas oleh Bapak Tri Jatmiko, Rumah Batik Bintan adalah pusat produksi batik yang mengubah bahan lokal menjadi karya bernilai tinggi, melestarikan warisan budaya sambil mengangkat potensi alam Bintan.
             </p>
 
             <div class="heritage-icons">
                 <div class="icon-box">
-                    <p>Pewarna <br> Alami</p>
+                    <p data-key="icon1">Pewarna <br> Alami</p>
                     <i class="fa-solid fa-seedling"></i>
                 </div>
 
                 <div class="icon-box">
-                    <p>Motif Khas <br> Bintan</p>
+                    <p data-key="icon2">Motif Khas <br> Bintan</p>
                     <i class="fa-solid fa-house-chimney"></i>
                 </div>
 
                 <div class="icon-box">
-                    <p>Warisan <br> Budaya</p>
+                    <p data-key="icon3">Warisan <br> Budaya</p>
                     <i class="fa-solid fa-landmark"></i>
                 </div>
             </div>
@@ -69,13 +77,13 @@
     </section>
 
     <section class="batik-manes" id="batik-manes">
-        <h2>Batik Manes</h2>
-        <h3>Lima Cabang, Lima Sila Pancasila</h3>
+        <h2 data-key="manes_small">Batik Manes</h2>
+        <h3 data-key="manes_deskripsi">Lima Cabang, Lima Sila Pancasila</h3>
         <div class="batik-images">
             <img src="/Image/batik2.jpg" alt="Motif Batik Manes 1">
             <img src="/Image/batik3.jpg" alt="Motif Batik Manes 2">
         </div>
-        <p>
+        <p data-key="manes_main">
             Bentuk daun bercabang lima melambangkan lima sila Pancasila, menggambarkan nilau luhur yang menyatukan bangsa. Batik Manes bukan sekadar kain, melainkan karya budaya yang merekam identitas lokal, kecintaan pada alam, dan semangat kebangsaan.
         </p>
 
@@ -83,8 +91,8 @@
     </section>
 
     <section class="koleksi-batik" id="koleksi-batik">
-        <h2>Koleksi Batik Bintan</h2>
-        <h3>Setiap helai menyimpan kisah alam & budaya</h3>
+        <h2 data-key="koleksi_small">Koleksi Batik Bintan</h2>
+        <h3 data-key="koleksi_main">Setiap helai menyimpan kisah alam & budaya</h3>
         <div class="koleksi-grid">
             <img src="/Image/batik-a.png" alt="BATIK A">
             <img src="/Image/batik-b.png" alt="BATIK B">
@@ -95,7 +103,7 @@
             <img src="/Image/batik-g.png" alt="BATIK G">
             <img src="/Image/batik-H.png" alt="BATIK H">
         </div>
-        <a href="gallery.html" class="btn-gallery">Lihat Gallery Lengkap</a>
+        <a href="gallery.html" data-key="koleksi_btn" class="btn-gallery">Lihat Galeri Lengkap</a>
     </section>
 
     <section class="eduwisata-section">
@@ -116,12 +124,12 @@
             </div>
         </div>
         <div class="text-content">
-            <h2>Eduwisata <br> Membatik</h2>
-            <p>Rasakan pengalaman membatik <br> langsung dari para pengrajin ahli!</p>
+            <h2 data-key="eduwisata_small">Eduwisata <br> Membatik</h2>
+            <p data-key="eduwisata_main">Rasakan pengalaman membatik <br> langsung dari para pengrajin ahli!</p>
             <ul>
-                <li>Belajar Teknik Tradisi</li>
-                <li>Pahami Filosofi</li>
-                <li>Bawa Pulang Karyamu</li>
+                <li data-key="eduwisata_1">Belajar Teknik Tradisi</li>
+                <li data-key="eduwisata_2">Pahami Filosofi</li>
+                <li data-key="eduwisata_3">Bawa Pulang Karyamu</li>
             </ul>
             <button>Ikuti Kelas Membatik</button>
         </div>
@@ -130,22 +138,22 @@
     <section class="visi-misi-section">
         <div class="overlay">
             <div class="content">
-            <h2 class="judul">VISI</h2>
+            <h2 data-key="visi_small" class="judul">VISI</h2>
             <hr class="garis-emas">
-            <p class="teks-visi">
+            <p data-key="visi_main" class="teks-visi">
                 Menjadi pusat pelestarian, pengembangan, dan promosi batik khas Bintan
                 yang dikenal secara nasional dan internasional.
             </p>
 
             <hr class="garis-putih">
 
-            <h2 class="judul">MISI</h2>
+            <h2 data-key="misi_small" class="judul">MISI</h2>
             <hr class="garis-emas">
             <ul class="daftar-misi">
-                <li>1. Melestarikan warisan budaya batik.</li>
-                <li>2. Mengangkat potensi lokal dalam desain dan bahan pewarna.</li>
-                <li>3. Memberdayakan masyarakat sekitar melalui industri batik.</li>
-                <li>4. Mengembangkan eduwisata batik sebagai daya tarik wisata budaya.</li>
+                <li data-key="misi_1">1. Melestarikan warisan budaya batik.</li>
+                <li data-key="misi_2">2. Mengangkat potensi lokal dalam desain dan bahan pewarna.</li>
+                <li data-key="misi_3">3. Memberdayakan masyarakat sekitar melalui industri batik.</li>
+                <li data-key="misi_4">4. Mengembangkan eduwisata batik sebagai daya tarik wisata budaya.</li>
             </ul>
             </div>
         </div>
@@ -160,11 +168,11 @@
         <div class="footer-right">
         <div class="footer-container">
             <div class="footer-column">
-                <h3>Navigasi</h3>
+                <h3 data-key="navi_small">Navigasi</h3>
                 <ul>
-                    <li><a href="home.html">Beranda</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li data-key="foot_home"><a href="home.html">Beranda</a></li>
+                    <li data-key="foot_gallery"><a href="gallery.html">Gallery</a></li>
+                    <li data-key="foot_contact"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -173,35 +181,38 @@
                 <ul>
                 <li><a href="#">WhatsApp</a></li>
                 <li><a href="#">Email</a></li>
-                <li><a href="#">Alamat</a></li>
+                <li data-key="foot_address"><a href="#">Alamat</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
-                <h3>Social Media</h3>
+                <h3 data-key="foot_media">Social Media</h3>
                 <ul>
                 <li><a href="https://www.instagram.com/rumahbatik_bintan" target="_blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/miko.jatmiko.458544" target="_blank">Facebook</a></li>
-                <li><a href="https://www.tiktok.com/@rumah.batik.binta" target="_blank">Tiktok</a></li>
+                <li><a href="https://www.tiktok.com/@rumah.batik.binta" target="_blank">TikTok</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
-                <h3>Jam Operasional</h3>
+                <h3 data-key="foot_jam">Jam Operasional</h3>
                 <ul>
-                    <li>Senin-Sabtu<br>09.00-17.00 WIB</li>
-                    <li>Minggu<br>Libur</li>
+                    <li data-key="foot_waktu">Senin-Sabtu<br>09.00-17.00 WIB</li>
+                    <li data-key="foot_libur">Minggu<br>Libur</li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
             <p>"Enjoy with Art - Batik dari Hati, untuk Negeri"</p>
-            <p>&copy; 2025 Rumah Batik Bintan. All Rights Reserved.</p>
+            <p data-key="footer-rights">&copy; 2025 Rumah Batik Bintan. All Rights Reserved.</p>
         </div>
         </div>
     </footer>
 
-    
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+
 </body>
 </html>
