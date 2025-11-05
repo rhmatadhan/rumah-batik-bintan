@@ -24,6 +24,7 @@ nav {
     z-index: 9999;
 }
 
+
 .logo {
     height: 55px;
     width: 65px;
@@ -93,6 +94,22 @@ nav a:hover {
     background: transparent;
     border: 2px solid #ffcc00;
     color: #ffcc00
+}
+.lang-btn {
+  background-color: #ffcc80;
+  color: #491F00;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 20px;
+}
+
+.lang-btn:hover {
+  background-color: #ffe2b5;
+  box-shadow: 0 0 10px rgba(255, 204, 128, 0.6);
 }
 
 .scroll-hint {

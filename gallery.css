@@ -55,6 +55,23 @@ nav a:hover {
     color: #ffcc00;
 }
 
+.lang-btn {
+  background-color: #ffcc80;
+  color: #491F00;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 20px;
+}
+
+.lang-btn:hover {
+  background-color: #ffe2b5;
+  box-shadow: 0 0 10px rgba(255, 204, 128, 0.6);
+}
+
 /* Style untuk heading utama (judul besar) */
 .hero h1 {
     color: #491F00; /* Warna teks coklat tua */
@@ -105,7 +122,7 @@ nav a:hover {
 
 /* Bagian galeri (kumpulan gambar) */
 .galeri {
-  background-color: #4b1e00; /* Warna coklat tua */
+  background-color: #5b2c1e;; /* Warna coklat tua */
   color: #ffe2b5;                              /* Warna teks krem terang */
   text-align: center;                            /* Konten di tengah */
   padding: 40px 20px;                            /* Ruang dalam atas-bawah 40px, sisi 20px */
@@ -155,20 +172,18 @@ nav a:hover {
 
 /* Teks di dalam kartu */
 .card p {
-  color: #4b1e00;                           /* Warna teks coklat */
+  color: #491F00;                           /* Warna teks coklat */
   font-weight: 500;                           /* Sedikit tebal */
 }
 
 
 
 /* Scrollbar khusus untuk browser berbasis WebKit (Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-  height: 10px;                               /* Tinggi scrollbar horizontal */
-}
+
 
 ::-webkit-scrollbar-track {
   background: #3e1600;                      /* Warna track (jalur scrollbar) */
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -176,14 +191,12 @@ nav a:hover {
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #ffcc80;                      /* Warna saat kursor di atas scrollbar */
-}
+
 
 
 /* Video-section */
 .video-section {
-  background-color: #4b1e00; /* Warna dasar sama seperti tema */
+  background-color: #5b2c1e;; /* Warna dasar sama seperti tema */
   color: #fff8dc; /* Warna teks krem */
   text-align: center;
   padding: 40px 20px;
