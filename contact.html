@@ -14,154 +14,159 @@
 <body>
 
     <!--Navbar-->
-    <header>
+    <nav>
         <div class="logo">
-            <img src="image/logo.png" alt="Rumah Batik Bintan" />
+            <img src="Image/logo.png" alt="Logo Batik Bintan">
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+        <ul>
+            <li><a data-key="nav_home" href="index.html">Beranda</a></li>
+            <li><a data-key="nav_gallery" href="gallery.html">Galeri</a></li>
+            <li><a data-key="nav_contact" href="contact.html">Kontak</a></li>
+        </ul>
+        <div class="lang-switch">
+            <select id="languageSwitcher">
+                <option value="id">ID</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </nav>
 
     <!--Hero-->
-    <section class="hero">
-        <h1>CONTACT US</h1>
-        <p>Kami siap menerima kunjungan, kerjasama,<br>dan pesanan.</p>
+    <section class="contact-hero">
+    <div class="contact-content">
+        <h1 data-key="contact_title">CONTACT US</h1>
+        <p data-key="contact_subtitle">
+        Kami siap menerima kunjungan, kerja sama,<br>
+        dan pesanan Anda!
+        </p>
+    </div>
     </section>
 
-    <!--Motif Bar-->
-    <div class="motif-bar">
-        <img src="Image/motif-bar.png" alt="motif batik" />
-    </div>
 
-    <!--Platform Text-->
-    <div class="subtitle">
-        Temukan kami di berbagai platform berikut untuk informasi,<br> pemesanan, dan update terbaru Rumah Batik Bintan.
-    </div>
+    <!-- ===== CONTACT SOCIAL SECTION ===== -->
+<section class="contact-social">
+    <h3 class="contact-subtitle">
+        Temukan kami di berbagai platform berikut untuk informasi, pemesanan, dan update terbaru Rumah Batik Bintan.
+    </h3>
 
-    <!--Contact List-->
-    <section class="contact-list">
-
-        <div class="item">
-        <a href="tel:+6285179915856">
-            <div class="icon"><i class="fas fa-phone"></i></div>
-            <h3>Phone Number</h3>
+    <!-- Row 1 -->
+    <div class="contact-row">
+        <a href="tel:+6285179915856" class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Phone Number</h4>
             <p>+62 851-7991-5856</p>
         </a>
-        </div>
 
-        <div class="item">
-        <a href="mailto:rumahbatikbintan@gmail.com">
-            <div class="icon"><i class="fas fa-envelope"></i></div>
-            <h3>Email Address</h3>
+        <a href="mailto:rumahbatikbintan@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email Adress</h4>
             <p>rumahbatikbintan@gmail.com</p>
         </a>
-        </div>
 
-        <div class="item">
-        <a href="https://wa.me/6285179915856" target="_blank">
-            <div class="icon"><i class="fab fa-whatsapp"></i></div>
-            <h3>WhatsApp</h3>
+        <a href="https://wa.me/6285179915856" target="_blank" class="contact-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h4>WhatsApp</h4>
             <p>+62 851-7991-5856</p>
         </a>
-        </div>
+    </div>
 
-        <div class="item">
-        <a href="https://instagram.com/rumahbatik_bintan" target="_blank">
-            <div class="icon"><i class="fab fa-instagram"></i></div>
-            <h3>Instagram</h3>
+    <!-- Row 2 -->
+    <div class="contact-row">
+        <a href="https://instagram.com/rumahbatik_bintan" target="_blank" class="contact-card">
+            <i class="fa-brands fa-instagram"></i>
+            <h4>Instagram</h4>
             <p>@rumahbatik_bintan</p>
-        </a>    
-        </div>
+        </a>
 
-        <div class="item">
-        <a href="https://facebook.com/rumah.batik.binta" target="_blank">
-            <div class="icon"><i class="fab fa-facebook"></i></div>
-            <h3>Facebook</h3>
+        <a href="https://facebook.com/rumah.batik.bintan" target="_blank" class="contact-card">
+            <i class="fa-brands fa-facebook"></i>
+            <h4>Facebook</h4>
+            <p>@rumah.batik.bintan</p>
+        </a>
+
+        <a href="https://tiktok.com/@rumah.batik.binta" target="_blank" class="contact-card">
+            <i class="fa-brands fa-tiktok"></i>
+            <h4>Tiktok</h4>
             <p>@rumah.batik.binta</p>
         </a>
-        </div>
-        
-        <div class="item">
-        <a href="https://tiktok.com/@rumah.batik.binta" target="_blank">
-            <div class="icon"><i class="fab fa-tiktok"></i></div>
-            <h3>Tiktok</h3>
-            <p>@rumah.batik.binta</p>
-        </a>
-        </div>
 
-        <div class="item">
-        <a href="https://youtube.com/@RumahBatikBintan" target="_blank">
-            <div class="icon"><i class="fab fa-youtube"></i></div>
-            <h3>Youtube</h3>
+        <a href="https://youtube.com/@RumahBatikBintan" target="_blank" class="contact-card">
+            <i class="fa-brands fa-youtube"></i>
+            <h4>YouTube</h4>
             <p>@RumahBatikBintan</p>
         </a>
-        </div>
+    </div>
+</section>
 
-    </section>
-
-    <!--Google Maps-->
-    <section class="map">
-        <iframe 
-        width="100%"
-        height="400" 
-        loading="lazy"
-        style="border:0;"
+    <section id="lokasi">
+    <div class="map-container">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1345068196347!2d104.37350817403532!3d1.0608063624386888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d979004cba9f37%3A0x291240159923a1c9!2sRUMAH%20BATIK%20BINTAN!5e0!3m2!1sid!2sid!4v1762419793893!5m2!1sid!2sid"
         allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Rumah+Batik+Bintan,+Ekang+Anculai,+Bintan&hl=id&z=15&output=embed">
-    </iframe>
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="alamat">
+        <i class="fa-solid fa-location-dot ikon"></i>
+        <p>
+        Kp. Margosari RT 002/RW 001, Desa Ekang Anculai,<br>
+        Kecamatan Teluk Sebong, Kabupaten Bintan, Kepulauan Riau, 29154.
+        </p>
+    </div>
     </section>
 
-    <!--Address-->
-    <section class="address">
-        <div class="icon-location">
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <p>
-            Kp. Margosari RT 002/RW 001, Desa Ekang Anculai,<br>
-            Kecamatan Teluk Sebong, Kabupaten Bintan, Kepulauan Riau, 29154.
-        </p>
-    </section>
+
 
     <!--Footer-->
-    <footer>
-        <div class="footer-content">
-
-            <div class="column">
-                <h3>Navigasi</h3>
-                <a href="index.html">Beranda</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
+    <footer id="footer" class="footer">
+        <div class="footer-left">
+            <img src="Image/Footer.png" alt="">
+        </div>
+        
+        <div class="footer-right">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 data-key="navi_small">Navigasi</h3>
+                <ul>
+                    <li><a data-key="foot_home" href="index.html">Beranda</a></li>
+                    <li><a data-key="foot_gallery" href="gallery.html">Gallery</a></li>
+                    <li><a data-key="foot_contact" href="contact.html">Contact</a></li>
+                </ul>
             </div>
 
-            <div class="column">
+            <div class="footer-column">
                 <h3>Contact</h3>
-                <a href="#">WhatsApp</a>
-                <a href="#">Email</a>
-                <a href="#">Alamat</a>
+                <ul>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a data-key="foot_address" href="#">Alamat</a></li>
+                </ul>
             </div>
 
-            <div class="column">
-                <h3>Social Media</h3>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Tiktok</a>
+            <div class="footer-column">
+                <h3 data-key="foot_media">Social Media</h3>
+                <ul>
+                <li><a href="https://www.instagram.com/rumahbatik_bintan" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/miko.jatmiko.458544" target="_blank">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@rumah.batik.binta" target="_blank">TikTok</a></li>
+                </ul>
             </div>
 
-            <div class="column">
-                <h3>Jam Operasional</h3>
-                <p>Senin-Sabtu<br>09.00-17.00 WIB</p>
-                <p>Minggu<br>Libur</p>
+            <div class="footer-column">
+                <h3 data-key="foot_jam">Jam Operasional</h3>
+                <ul>
+                    <li data-key="foot_waktu">Senin-Sabtu<br>09.00-17.00 WIB</li>
+                    <li data-key="foot_libur">Minggu<br>Libur</li>
+                </ul>
             </div>
-
         </div>
 
-        <div class="copyright">
-        “Enjoy with Art - Batik dari Hati, untuk Negeri”<br>
-        © 2025 Rumah Batik Bintan. All Rights Reserved.  
+        <div class="footer-bottom">
+            <p>"Enjoy with Art - Batik dari Hati, untuk Negeri"</p>
+            <p data-key="footer-rights">&copy; 2025 Rumah Batik Bintan. All Rights Reserved.</p>
+        </div>
         </div>
     </footer>
 
