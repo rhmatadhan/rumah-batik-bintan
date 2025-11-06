@@ -105,20 +105,7 @@ nav a:hover {
 }
 
 /* Bagian hero (bagian utama di atas halaman) */
-.hero {
-    background: #ffe2b5;                        /* Warna latar dasar */
-    text-align: center;                           /* Konten di tengah */
-    width: 100%;                                  /* Lebar tetap (sebaiknya ubah ke 100% agar responsif) */
-    background-repeat: repeat-x;                  /* Gambar diulang secara horizontal */
-    background-position: bottom;                  /* Posisi gambar di bawah */
-    background-color: #ffe2b5;                  /* Warna latar cadangan */
-    background-image: url('/Image/Hero Section.png'); /* Gambar hero */
-    background-repeat: no-repeat;                 /* Tidak diulang */
-    background-position: center;                  /* Letak di tengah */
-    background-size: cover;                       /* Penuhi seluruh area */
-    padding: 150px 20px;                          /* Jarak dalam yang luas */
-    color: #491F00;                             /* Warna teks */
-}
+
 
 /* Bagian galeri (kumpulan gambar) */
 .galeri {
