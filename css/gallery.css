@@ -145,9 +145,28 @@ nav a:hover {
   justify-content: center;
 }
 
+
+  /* Scrollbar khusus untuk browser berbasis WebKit (Chrome, Edge, Safari) */
 .slider::-webkit-scrollbar {
-  display: none;
+  height: 12px; /* Tinggi scrollbar */
 }
+
+.slider::-webkit-scrollbar-track {
+  background: #e3c394; /* Warna latar track */
+  border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: #5b2c1e; /* Warna batang scrollbar */
+  border-radius: 10px;
+  border: 3px solid #e3c394; /* Tambah jarak agar tampak rapi */
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+  background-color: #8c4b34; /* Warna saat dihover */
+}
+
+
 
 .slide-item {
   min-width: 420px; /* ukuran kartu BESAR desktop */

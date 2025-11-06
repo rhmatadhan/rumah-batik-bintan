@@ -152,6 +152,10 @@ nav a:hover {
   scroll-behavior: smooth;                      /* Scroll lembut */
 }
 
+/* Scrollbar khusus untuk browser berbasis WebKit (Chrome, Edge, Safari) */
+
+
+
 /* Style untuk setiap kartu galeri */
 .card {
   background-color: #f5d9b0;                  /* Warna dasar kartu */
@@ -180,7 +184,24 @@ nav a:hover {
 
 /* Scrollbar khusus untuk browser berbasis WebKit (Chrome, Edge, Safari) */
 
+.card-container::-webkit-scrollbar {
+  height: 12px; /* Tinggi scrollbar */
+}
 
+.card-container::-webkit-scrollbar-track {
+  background: #e3c394; /* Warna latar track */
+  border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background-color: #5b2c1e; /* Warna batang scrollbar */
+  border-radius: 10px;
+  border: 3px solid #e3c394; /* Tambah jarak agar tampak rapi */
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+  background-color: #8c4b34; /* Warna saat dihover */
+}
 
 
 
