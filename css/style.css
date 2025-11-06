@@ -69,6 +69,7 @@ nav a:hover {
 
 .hero {
     background: #5b2c1e;
+    color: #f7d8a4;
     text-align: center;
     padding: 100px 20px;
     margin-top: 20px;
@@ -562,4 +563,590 @@ nav a:hover {
     margin-top: 50px;
     font-size: 13px;
     color: #4a3a2a;
+}
+
+
+
+
+
+/* Untuk HP (max-width 768px) */
+@media (max-width: 768px) {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+    height: auto;
+}
+
+/* Logo tetap di kiri */
+nav .logo img {
+    max-height: 35px;
+}
+
+/* Menu di tengah, jarak antar item dirapatkan */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 13px;
+}
+
+  /* Switch bahasa di kanan */
+.lang-switch select {
+    font-size: 12px;
+    padding: 3px 6px;
+}
+}
+
+/* ============================= */
+/* HERO SECTION RESPONSIVE       */
+/* ============================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero h3 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .hero .buttons {
+    gap: 15px;
+  }
+}
+
+/* HP */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 20px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+
+  .hero .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero .btn,
+  .hero .btn-outline {
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .scroll-hint {
+    margin-top: 25px;
+  }
+
+  .scroll-hint p {
+    font-size: 12px;
+  }
+
+  .scroll-hint a {
+    font-size: 18px;
+  }
+}
+
+
+/* ============================= */
+/* HERITAGE SECTION RESPONSIVE   */
+/* ============================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .heritage-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+    gap: 30px;
+  }
+
+  .heritage-text h2 {
+    font-size: 32px;
+  }
+
+  .heritage-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+
+  .heritage-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .heritage-img img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+/* HP */
+@media (max-width: 768px) {
+  .heritage-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px;
+    gap: 25px;
+  }
+
+  .heritage-text {
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .heritage-text h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+
+  .heritage-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 auto 30px auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* 3 ikon sejajar */
+  .heritage-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .heritage-icons .icon-box {
+    flex: 1 1 30%; /* tiap ikon ambil sekitar 1/3 lebar */
+    max-width: 100px; /* biar pas di HP kecil */
+  }
+
+  .heritage-icons .icon-box p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .heritage-icons .icon-box i {
+    font-size: 22px;
+    margin-top: 6px;
+  }
+
+  /* Gambar di bawah */
+  .heritage-img {
+    width: 75%;
+  }
+
+  .heritage-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .batik-manes {
+    text-align: center;
+    padding: 50px 15px;
+  }
+
+  .batik-manes h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .batik-manes h3 {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 15px;
+  }
+
+  /* Gambar sejajar dua-dua */
+  .batik-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* biar bisa turun kalau layar sempit */
+    margin-bottom: 20px;
+  }
+
+  .batik-images img {
+    width: 48%; /* biar dua gambar muat di satu baris */
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .batik-manes p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 90%;
+    margin: 0 auto 25px auto;
+    text-align: justify;
+  }
+
+  .garis-putih {
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #fff;
+  }
+}
+
+
+/* Untuk TABLET (lebar 769px sampai 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .batik-manes {
+    text-align: center;
+    padding: 70px 40px;
+  }
+
+  .batik-manes h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .batik-manes h3 {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 25px;
+  }
+
+  .batik-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+
+  .batik-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .batik-manes p {
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 85%;
+    margin: 0 auto 30px auto;
+  }
+
+  .garis-putih {
+    width: 50%;
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #fff;
+  }
+}
+
+
+/* Untuk HP */
+@media (max-width: 768px) {
+  .koleksi-batik {
+    text-align: center;
+    padding: 50px 15px;
+  }
+
+  .koleksi-batik h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .koleksi-batik h3 {
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .koleksi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 25px;
+  }
+
+  .koleksi-grid img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .btn-gallery {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
+/* Untuk TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .koleksi-batik {
+    text-align: center;
+    padding: 70px 40px;
+  }
+
+  .koleksi-batik h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .koleksi-batik h3 {
+    font-size: 17px;
+    color: #ddd;
+    margin-bottom: 30px;
+  }
+
+  .koleksi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di tablet */
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+
+  .koleksi-grid img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .btn-gallery {
+    display: inline-block;
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+}
+
+
+/* ======== HP (max-width: 768px) ======== */
+@media (max-width: 768px) {
+  /* === Eduwisata Membatik === */
+  .eduwisata-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 15px;
+    gap: 25px;
+  }
+
+  .images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .images-container img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .img-large, .img-small-group, .img-wide {
+    width: 100%;
+  }
+
+  .img-small-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .img-small img {
+    width: 48%;
+  }
+
+  .text-content {
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .text-content h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .text-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .text-content ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .btn-eduwisata {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  /* === VISI MISI === */
+  .visi-misi-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .visi-misi-section .content {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .judul {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .teks-visi {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .daftar-misi {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .daftar-misi li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+}
+
+/* ======== TABLET (769px - 1024px) ======== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* === Eduwisata Membatik === */
+  .eduwisata-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 40px;
+    gap: 30px;
+  }
+
+  .images-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "large small"
+      "wide wide";
+    gap: 15px;
+  }
+
+  .img-large {
+    grid-area: large;
+  }
+
+  .img-small-group {
+    grid-area: small;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .img-wide {
+    grid-area: wide;
+  }
+
+  .images-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .text-content h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .text-content p,
+  .text-content ul li {
+    font-size: 15px;
+  }
+
+  /* === VISI MISI === */
+  .visi-misi-section {
+    text-align: center;
+    padding: 80px 60px;
+  }
+
+  .judul {
+    font-size: 28px;
+  }
+
+  .teks-visi,
+  .daftar-misi li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 }
