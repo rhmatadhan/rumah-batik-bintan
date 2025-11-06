@@ -111,22 +111,6 @@ nav a:hover {
     margin: 5px;
     
 }
-.lang-btn {
-    background-color: #ffcc80;
-    color: #491F00;
-    border: none;
-    border-radius: 8px;
-    padding: 6px 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-left: 20px;
-}
-
-.lang-btn:hover {
-    background-color: #ffe2b5;
-    box-shadow: 0 0 10px rgba(255, 204, 128, 0.6);
-}
 
 .scroll-hint {
     margin-top: 60px;
@@ -236,10 +220,11 @@ nav a:hover {
 
 
 .batik-manes {
+    max-height: 90vh;
     background-color: #5b2c1e;
-    color: #f2d7b3;
+    color: #fff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 0px;
 }
 
 .batik-manes h2 {
@@ -263,14 +248,14 @@ nav a:hover {
 }
 
 .batik-images img {
-    width: 45%;
+    width: 30%;
     max-width: 400px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .batik-manes p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
@@ -282,12 +267,11 @@ nav a:hover {
     height: 1.5px;
     border: none;
     background-color: #fff;
-    margin: 30px auto;
 }
 
 .koleksi-batik {
     background-color: #5b2c1e;
-    color: #f2d7b3;
+    color: #fff;
     text-align: center;
     padding: 80px 20px 60px;
 }
@@ -301,7 +285,7 @@ nav a:hover {
 }
 
 .koleksi-batik h3 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
     font-weight: normal;
     text-align: center;
@@ -348,8 +332,8 @@ nav a:hover {
 
 /* Section Eduwisata Membatik */
 .eduwisata-section {
-    background-color: #f3d9a4;
-    color: #4a2e0e;
+    background-color: #f7d8a4;
+    color: #4b2a10;
     display: flex;
     gap: 30px;
     padding: 40px 60px;
@@ -440,8 +424,8 @@ nav a:hover {
 }
 
 .text-content button {
-    background-color: #5b2e00;
-    color: #f3d9a4;
+    background-color: #4b2a10;
+    color: #fff;
     border: none;
     padding: 12px 28px;
     border-radius: 20px;
@@ -458,13 +442,12 @@ nav a:hover {
 /* Visi Misi */
 .visi-misi-section {
     position: relative;
-    background: url('/Image/SEJARAH\ &\ FILOSOFI\ SECTION.png') no-repeat center center/cover;
-    height: 100vh; /* biar full satu layar */
+    background: url('Image/SEJARAH\ &\ FILOSOFI\ SECTION.png') no-repeat center center/cover;
+    height: 90vh; /* biar full satu layar */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: 'Poppins', sans-serif;
 }
 
 .overlay {
@@ -528,7 +511,6 @@ nav a:hover {
     display: flex;
     background-color: #f2d6a2;
     color: #3e2f20;
-    font-family: 'Poppins', sans-serif;
 }
 
 .footer-left img {

@@ -72,6 +72,19 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(255, 204, 128, 0.6);
 }
 
+.hero {
+    background: #ffe2b5;                        /* Warna latar dasar */
+    text-align: center;                           /* Konten di tengah */
+    width: 100%;                                  /* Lebar tetap (sebaiknya ubah ke 100% agar responsif) */
+    background-repeat: repeat-x;                  /* Gambar diulang secara horizontal */
+    background-position: bottom;                  /* Posisi gambar di bawah */
+    background-color: #ffe2b5;                  /* Warna latar cadangan */
+    background-repeat: no-repeat;                 /* Tidak diulang */
+    background-position: center;                  /* Letak di tengah */
+    background-size: cover;                       /* Penuhi seluruh area */
+    padding: 150px 20px;                          /* Jarak dalam yang luas */
+    color: #491F00;                             /* Warna teks */
+}
 /* Style untuk heading utama (judul besar) */
 .hero h1 {
     color: #491F00; /* Warna teks coklat tua */
@@ -168,15 +181,6 @@ nav a:hover {
 /* Scrollbar khusus untuk browser berbasis WebKit (Chrome, Edge, Safari) */
 
 
-::-webkit-scrollbar-track {
-  background: #3e1600;                      /* Warna track (jalur scrollbar) */
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ffe2b5;                      /* Warna bagian yang bisa digeser */
-  border-radius: 10px;
-}
 
 
 

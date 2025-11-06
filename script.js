@@ -5,7 +5,7 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-key]").forEach(element => {
     const key = element.getAttribute("data-key");
     if (translations[lang][key]) {
-      element.innerText = translations[lang][key];
+      element.innerHTML = translations[lang][key];
     }
   });
 }
