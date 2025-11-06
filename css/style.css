@@ -423,26 +423,26 @@ nav a:hover {
     font-size: 20px;
 }
 
-.text-content button {
-    background-color: #4b2a10;
-    color: #fff;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+.btn-eduwisata {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #f2b705;
+    color: #4b2600;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-.text-content button:hover {
-    background-color: #442100;
+.btn-eduwisata:hover {
+    background-color: #ffca33;
 }
 
 /* Visi Misi */
 .visi-misi-section {
     position: relative;
-    background: url('Image/SEJARAH\ &\ FILOSOFI\ SECTION.png') no-repeat center center/cover;
+    background: url('/Image/background_visi.png') no-repeat center center/cover;
     height: 90vh; /* biar full satu layar */
     display: flex;
     align-items: center;
