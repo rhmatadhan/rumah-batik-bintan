@@ -121,28 +121,30 @@ nav a:hover {
 }
 
 .kegiatan {
-  height: 100vh; /* full layar */
-  padding: 40px 20px;
+  background-color: #5b2c1e;
+  color: #fff;
   text-align: center;
-  background: #5b2c1e;
+  padding: 60px 20px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* biar konten di tengah layar */
+  justify-content: center;
 }
 
 .kegiatan h2 {
-  font-size: 70px;
+  font-size: 60px;
+  margin-bottom: 40px;
   color: #fff;
-  margin-bottom: 30px;
 }
 
 .slider {
   display: flex;
-  gap: 30px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 20px;
-  justify-content: center;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+  scrollbar-color: #f4c27f #3a1f08;
+  scrollbar-width: thin;
 }
 
 
@@ -153,6 +155,17 @@ nav a:hover {
 
 .slider::-webkit-scrollbar-track {
   background: #e3c394; /* Warna latar track */
+  border-radius: 10px;
+  height: 10px;
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #3a1f08;
+  border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: #f4c27f;
   border-radius: 10px;
 }
 
@@ -169,25 +182,30 @@ nav a:hover {
 
 
 .slide-item {
-  min-width: 420px; /* ukuran kartu BESAR desktop */
-  max-width: 420px;
-  background: #f4d9a0;
-  border-radius: 18px;
-  scroll-snap-align: center;
+  flex: 0 0 auto;
+  background-color: #d8b98b;
+  color: #3a1f08;
+  border-radius: 15px;
   overflow: hidden;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.slide-item:hover {
+  transform: scale(1.05);
 }
 
 .slide-item img {
   width: 100%;
-  height: 260px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 18px 18px 0 0;
 }
 
 .slide-item p {
-  padding: 15px;
-  font-size: 16px;
-  color: #5b2c1e;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .video-section {
