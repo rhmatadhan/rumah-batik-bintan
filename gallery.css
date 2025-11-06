@@ -10,6 +10,7 @@ body {
     background-color: #fff;
 }
 
+/* NAVIGASI */
 nav {
     background-color: #5b2c1e;
     color: white;
@@ -22,6 +23,7 @@ nav {
     width: 100%;
     z-index: 9999;
 }
+
 
 .logo {
     height: 55px;
@@ -55,172 +57,21 @@ nav a:hover {
     color: #ffcc00;
 }
 
-.lang-btn {
-  background-color: #ffcc80;
-  color: #491F00;
-  border: none;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
-  margin-left: 20px;
+.lang-switch select {
+    padding: 5px 8px;
+    background: #ffcc00;
+    color: #5b2c1e;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.lang-btn:hover {
-  background-color: #ffe2b5;
-  box-shadow: 0 0 10px rgba(255, 204, 128, 0.6);
-}
-
-/* Style untuk heading utama (judul besar) */
-.hero h1 {
-    color: #491F00; /* Warna teks coklat tua */
-    text-align: center; /* Rata tengah */
-    font-family: 'Sora', sans-serif; /* Gunakan font yang sama */
-    font-size: 96px; /* Ukuran besar */
-}
-
-/* Style untuk paragraf umum */
-.hero p {
-    color: #491F00; /* Warna teks */
-    text-align: center; /* Rata tengah */
-    font-family: 'Sora', sans-serif;
-    font-size: 32px; /* Ukuran besar */
-    font-weight: bold; /* Tebal */
-}
-
-/* Mengatur tata letak list di navbar */
-.navbar ul {
-    list-style: none; /* Hilangkan tanda bullet */
-    justify-content: flex-end; /* Elemen diarahkan ke kanan */
-    align-items: center; /* Rata tengah secara vertikal */
-    display: flex; /* Flexbox untuk sejajar */
-    gap: 40px; /* Jarak antar item menu */
-}
-
-/* Efek hover tambahan untuk semua link di navbar */
-.navbar a:hover {
-    text-decoration: underline;                   /* Garis bawah saat hover */
-    color: #e3c394;                             /* Warna sedikit lebih terang */
-}
-
-/* Bagian hero (bagian utama di atas halaman) */
-.hero {
-    background: #ffe2b5;                        /* Warna latar dasar */
-    text-align: center;                           /* Konten di tengah */
-    width: 100%;                                  /* Lebar tetap (sebaiknya ubah ke 100% agar responsif) */
-    background-repeat: repeat-x;                  /* Gambar diulang secara horizontal */
-    background-position: bottom;                  /* Posisi gambar di bawah */
-    background-color: #ffe2b5;                  /* Warna latar cadangan */
-    background-image: url('/Image/Hero Section.png'); /* Gambar hero */
-    background-repeat: no-repeat;                 /* Tidak diulang */
-    background-position: center;                  /* Letak di tengah */
-    background-size: cover;                       /* Penuhi seluruh area */
-    padding: 150px 20px;                          /* Jarak dalam yang luas */
-    color: #491F00;                             /* Warna teks */
-}
-
-/* Bagian galeri (kumpulan gambar) */
-.galeri {
-  background-color: #5b2c1e;; /* Warna coklat tua */
-  color: #ffe2b5;                              /* Warna teks krem terang */
-  text-align: center;                            /* Konten di tengah */
-  padding: 40px 20px;                            /* Ruang dalam atas-bawah 40px, sisi 20px */
-}
-
-/* Judul di bagian galeri */
-.galeri h1 {
-    font-family: 'Sora', sans-serif;
-    color: FFE2B5;
-    margin-bottom: 32px;   
-    font-size: 96px;                    
-}
-
-.galeri p {
-    font-family: 'Sora', sans-serif;
-    color: FFE2B5;
-  margin-bottom: 32px;   
-  font-size: 32px;  
-}
-
-/* Container yang menampung kartu galeri */
-.galeri-container {
-  display: flex;                                /* Susun kartu secara horizontal */
-  overflow-x: auto;                             /* Scroll horizontal bila melampaui lebar */
-  gap: 64px;                                    /* Jarak antar kartu */
-  padding-bottom: 10px;                         /* Jarak bawah agar scroll tidak menutupi konten */
-  scroll-behavior: smooth;                      /* Scroll lembut */
-}
-
-/* Style untuk setiap kartu galeri */
-.card {
-  background-color: #f5d9b0;                  /* Warna dasar kartu */
-  border-radius: 30px;                          /* Sudut melengkung */
-  flex: 0 0 auto;                               /* Kartu tidak menyusut atau melar */
-  width: 602px;                                 /* Lebar tetap */
-  text-align: center;                           /* Konten rata tengah */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);      /* Bayangan lembut */
-}
-
-/* Gambar di dalam kartu */
-.card img {
-  width: 602px;                                 /* Sesuaikan dengan lebar kartu */
-  height: 302px;                                /* Tinggi tetap */
-  border-radius: 30px;                          /* Sudut gambar melengkung */
-  object-fit: cover;                            /* Potong gambar agar proporsional */
-}
-
-/* Teks di dalam kartu */
-.card p {
-  color: #491F00;                           /* Warna teks coklat */
-  font-weight: 500;                           /* Sedikit tebal */
-}
-
-
-
-/* Scrollbar khusus untuk browser berbasis WebKit (Chrome, Edge, Safari) */
-
-
-::-webkit-scrollbar-track {
-  background: #3e1600;                      /* Warna track (jalur scrollbar) */
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ffe2b5;                      /* Warna bagian yang bisa digeser */
-  border-radius: 10px;
-}
-
-
-
-
-/* Video-section */
-.video-section {
-  background-color: #5b2c1e;; /* Warna dasar sama seperti tema */
-  color: #fff8dc; /* Warna teks krem */
-  text-align: center;
-  padding: 40px 20px;
-  font-family: 'Sora', sans-serif;
-}
-.video-section h1{
-    font-family: 'Sora', sans-serif;
-    margin-bottom: 32px;   
-    font-size: 96px; 
-    
-
-}
-
-/* Garis kuning di atas dan bawah video */
-.video-section .line {
-  width: 100%; /* Panjang garis */
-  height: 4px; /* Ketebalan garis */
-  background-color: hwb(50 13% 17%); /* Warna kuning lembut */
-  margin: 20px auto; /* Tengah secara horizontal */
-  border-radius: 2px; /* Sedikit melengkung */
-}
-
-/* Container video */
-.video-container {
+/* SECTION HERO GALERI */
+.gallery-hero {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f7d8a4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +84,7 @@ nav a:hover {
 .gallery-hero h1 {
   font-size: 100px;
   font-weight: 700;
-  color: #4b2a10;
+  color: #5b2c1e;
   line-height: 1.3;
 }
 
@@ -241,7 +92,7 @@ nav a:hover {
   margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: #513520;
+  color: #5b2c1e;
 }
 
 /* Ornamen */
@@ -281,7 +132,7 @@ nav a:hover {
 
 .kegiatan h2 {
   font-size: 70px;
-  color: #f7e9c3;
+  color: #fff;
   margin-bottom: 30px;
 }
 
@@ -317,7 +168,7 @@ nav a:hover {
 .slide-item p {
   padding: 15px;
   font-size: 16px;
-  color: #3b270f;
+  color: #5b2c1e;
 }
 
 .video-section {
@@ -327,7 +178,7 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   background: #5b2c1e;
-  color: #f7e9c3;
+  color: #fff;
   padding: 60px 20px;
 }
 
