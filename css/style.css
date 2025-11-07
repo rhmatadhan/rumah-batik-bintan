@@ -786,7 +786,7 @@ nav ul li a {
 
   /* Gambar di bawah */
   .heritage-img {
-    width: 75%;
+    width: 60%;
   }
 
   .heritage-img img {
@@ -908,17 +908,19 @@ nav ul li a {
 
   .koleksi-batik h3 {
     font-size: 15px;
-    color: #ddd;
+    color: #fff;
     margin-bottom: 25px;
     line-height: 1.6;
   }
 
   .koleksi-grid {
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 kolom */
-    gap: 10px;
+    gap: 25px;
     justify-items: center;
     margin-bottom: 25px;
+    margin-left: 55px;
   }
 
   .koleksi-grid img {
@@ -977,95 +979,212 @@ nav ul li a {
 }
 
 
-/* ======== HP (max-width: 768px) ======== */
+/* ===================================== */
+/* EDUWISATA MEMBATIK - RESPONSIVE TOTAL */
+/* ===================================== */
+
+/* ========== RESPONSIVE EDUWISATA (≤ 768px) ========== */
 @media (max-width: 768px) {
-  /* === Eduwisata Membatik === */
   .eduwisata-section {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px 15px;
+    padding: 30px 20px;
     gap: 25px;
   }
 
   .images-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .images-container img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .img-large, .img-small-group, .img-wide {
-    width: 100%;
-  }
-
-  .img-small-group {
-    display: flex;
-    justify-content: center;
+    margin-left: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     gap: 10px;
   }
 
-  .img-small img {
-    width: 48%;
+  .img-large {
+    margin-top: 55px;
   }
+
+  /* Gambar auto responsive */
+  .img-large img,
+  .img-small img,
+  .img-wide img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .img-large img { height: 232px; }
+  .img-small img { height: 110px; }
+  .img-wide img { height: 130px; }
 
   .text-content {
+    margin-left: 0;
     width: 100%;
-    max-width: 95%;
+    max-width: 100%;
   }
 
   .text-content h2 {
-    font-size: 26px;
+    font-size: 36px;
     margin-bottom: 10px;
+    text-align: left;
   }
 
   .text-content p {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
     margin-bottom: 15px;
   }
 
   .text-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
+    padding-left: 18px;
+    margin-bottom: 20px;
+    text-align: left;
   }
 
   .text-content ul li {
-    font-size: 14px;
-    margin-bottom: 8px;
+    font-size: 16px;
+    margin-bottom: 6px;
   }
 
+  /* Tombol ke kanan */
   .btn-eduwisata {
-    display: inline-block;
+    float: right;
+    padding: 9px 18px;
     font-size: 14px;
-    padding: 10px 18px;
   }
+}
 
-  /* === VISI MISI === */
+/* untuk hp kecil bgt */
+@media (max-width: 480px) {
+  .text-content h2 { font-size: 30px; }
+  .img-large img { height: 200px; }
+  .img-small img { height: 95px; }
+  .img-wide img { height: 115px; }
+}
+
+
+
+/* ===================================== */
+/* VISI MISI RESPONSIVE (FINAL VERSION) */
+/* ===================================== */
+
+/* Desktop (tetap gunakan style utama kamu di atas) */
+
+/* ====================== */
+/* TABLET  (769px–1024px) */
+/* ====================== */
+@media (min-width: 769px) and (max-width: 1024px) {
   .visi-misi-section {
+    background: url("Image/background_visi.png") no-repeat center center/cover;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 60px 20px;
   }
 
-  .visi-misi-section .content {
-    max-width: 95%;
+  .overlay {
+    background: rgba(50, 30, 10, 0.65);
+    padding: 50px 25px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .overlay .content {
+    max-width: 700px;
     margin: 0 auto;
   }
 
   .judul {
-    font-size: 24px;
-    margin-bottom: 8px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+
+  .garis-emas {
+    width: 150px;
+    height: 3px;
+    background-color: #d1a74a;
+    border: none;
+    margin: 12px auto 25px;
+  }
+
+  .garis-putih {
+    width: 70%;
+    height: 1px;
+    background-color: #d1a74a;
+    border: none;
+    margin: 35px auto;
   }
 
   .teks-visi {
-    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #fff;
+  }
+
+  .daftar-misi {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .daftar-misi li {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+}
+
+/* ====================== */
+/* HANDPHONE (max 768px) */
+/* ====================== */
+@media (max-width: 768px) {
+  .visi-misi-section {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay {
+    background: rgba(50, 30, 10, 0.7);
+    width: 100%;
+    padding: 40px 18px;
+    border-radius: 8px;
+  }
+
+  .overlay .content {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .judul {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .garis-emas {
+    width: 120px;
+    height: 3px;
+    background-color: #d1a74a;
+    margin: 10px auto 18px;
+    border: none;
+  }
+
+  .garis-putih {
+    width: 80%;
+    height: 1px;
+    background-color: #d1a74a;
+    margin: 25px auto;
+    border: none;
+  }
+
+  .teks-visi {
+    font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 20px;
   }
@@ -1077,76 +1196,68 @@ nav ul li a {
   }
 
   .daftar-misi li {
-    font-size: 14px;
+    font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 10px;
   }
 }
 
-/* ======== TABLET (769px - 1024px) ======== */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* === Eduwisata Membatik === */
-  .eduwisata-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 70px 40px;
-    gap: 30px;
+
+/* ====== RESPONSIVE FOOTER (≤ 768px) ====== */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: row; /* tetap horizontal */
+    align-items: stretch;
   }
 
-  .images-container {
+  .footer-left img {
+    width: 110px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .footer-right {
+    padding: 20px;
+  }
+
+  .footer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "large small"
-      "wide wide";
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-column {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+  }
+}
+
+/* ====== HP kecil ≤ 480px ====== */
+@media (max-width: 480px) {
+  .footer-left img {
+    width: 95px;
+  }
+
+  .footer-container {
     gap: 15px;
   }
 
-  .img-large {
-    grid-area: large;
-  }
-
-  .img-small-group {
-    grid-area: small;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .img-wide {
-    grid-area: wide;
-  }
-
-  .images-container img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .text-content h2 {
-    font-size: 30px;
-    margin-bottom: 12px;
-  }
-
-  .text-content p,
-  .text-content ul li {
+  .footer-column h3 {
     font-size: 15px;
   }
 
-  /* === VISI MISI === */
-  .visi-misi-section {
-    text-align: center;
-    padding: 80px 60px;
+  .footer-column ul li {
+    font-size: 13px;
+    margin-bottom: 6px;
   }
 
-  .judul {
-    font-size: 28px;
-  }
-
-  .teks-visi,
-  .daftar-misi li {
-    font-size: 15px;
-    line-height: 1.8;
+  .footer-bottom {
+    font-size: 11px;
   }
 }
