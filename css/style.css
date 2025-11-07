@@ -10,6 +10,20 @@ body {
     background-color: #fff;
 }
 
+/* Efek awal halaman saat baru terbuka */
+.page-transition {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+/* Saat halaman aktif / sudah muncul */
+.page-transition.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* NAVIGASI */
 nav {
     background-color: #5b2c1e;

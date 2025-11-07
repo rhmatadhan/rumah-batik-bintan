@@ -241,7 +241,7 @@ nav a:hover {
 }
 
 /* Tombol Play di atas video */
-.play-button {
+/* .play-button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -256,7 +256,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
+} */
 
 .play-button:hover {
   background: rgba(255,255,255,0.9);

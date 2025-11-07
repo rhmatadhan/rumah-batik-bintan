@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link rel="stylesheet" href="css/gallery.css">
 </head>
-<body>
+<body class="page-transition">
 
     <nav>
         <div class="logo">
@@ -28,6 +28,8 @@
             </select>
         </div>
     </nav>
+
+    <div id="gallery"></div>
 
 <!-- ===== HERO SECTION ===== -->
 <section class="gallery-hero">
@@ -110,7 +112,7 @@
                 <h3 data-key="navi_small">Navigasi</h3>
                 <ul>
                     <li><a data-key="foot_home" href="index.html">Beranda</a></li>
-                    <li><a data-key="foot_gallery" href="gallery.html">Gallery</a></li>
+                    <li><a id="scrollTopBtn" data-key="foot_gallery" href="#gallery">Gallery</a></li>
                     <li><a data-key="foot_contact" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -119,8 +121,8 @@
                 <h3>Contact</h3>
                 <ul>
                 <li><a href="https://wa.me/6285179915856" target="_blank">WhatsApp</a></li>
-                <li><a href="#">Email</a></li>
-                <li><a data-key="foot_address" href="#">Alamat</a></li>
+                <li><a href="mailto:rumahbatikbintan@gmail.com" target="_blank">Email</a></li>
+                <li><a data-key="foot_address" href="https://maps.app.goo.gl/MQkaeVXxbF5pN6CRA" target="_blank">Alamat</a></li>
                 </ul>
             </div>
 
@@ -150,6 +152,13 @@
 
     <script src="translations.js"></script>
     <script src="script.js"></script>
+
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.add("show");
+      });
+    </script>
+
 
 </body>
 </html>

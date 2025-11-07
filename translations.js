@@ -38,7 +38,7 @@ const translations = {
     navigasi_small: "Navigasi",
     foot_home: "Beranda",
     foot_gallery: "Galeri",
-    foot_contact: "kontak",
+    foot_contact: "Kontak",
     foot_address: "Alamat",
     foot_media: "Media Sosial",
     foot_jam: "Jam Operasional",
