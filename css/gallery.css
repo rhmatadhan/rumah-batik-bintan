@@ -121,7 +121,7 @@ nav a:hover {
 
 .kegiatan {
   background-color: #5b2c1e;
-  color: #fff;
+  color: #f7d8a4;
   text-align: center;
   padding: 60px 20px;
   height: 90vh;
@@ -133,7 +133,7 @@ nav a:hover {
 .kegiatan h2 {
   font-size: 60px;
   margin-bottom: 40px;
-  color: #fff;
+  color: #f7d8a4;
 }
 
 .slider {
@@ -214,7 +214,7 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   background: #5b2c1e;
-  color: #fff;
+  color: #f7d8a4;
   padding: 60px 20px;
 }
 

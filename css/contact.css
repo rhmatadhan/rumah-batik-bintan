@@ -80,7 +80,7 @@ nav a:hover {
 .contact-content h1 {
     font-size: 80px;
     font-weight: 800;
-    color: #fff;
+    color: #f7d8a4;
     margin-bottom: 20px;
 }
 
@@ -88,7 +88,7 @@ nav a:hover {
     font-size: 30px;
     font-weight: 400;
     line-height: 1.4;
-    color: #fff;
+    color: #f7d8a4;
 }
 
 .garis-putih {
@@ -102,7 +102,7 @@ nav a:hover {
     background: #5b2c1e;
     padding: 60px 20px;
     text-align: center;
-    color: #fff;
+    color: #f7d8a4;
 }
 
 .contact-subtitle {
@@ -186,6 +186,7 @@ nav a:hover {
 }
 
 .alamat p {
+  color: #f7d8a4;
   font-size: 16px;
   line-height: 1.6;
   max-width: 700px;
@@ -324,7 +325,7 @@ nav ul li a {
     font-size: 32px;
     font-weight: 400;
     line-height: 1.5;
-    color: #fff;
+    color: #f7d8a4;
     max-width: 700px;
     margin: 0 auto;
 }
