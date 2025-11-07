@@ -237,7 +237,7 @@ nav a:hover {
 .batik-manes {
     max-height: 90vh;
     background-color: #5b2c1e;
-    color: #fff;
+    color: #f7d8a4;
     text-align: center;
     padding: 50px 0px;
 }
@@ -249,6 +249,7 @@ nav a:hover {
 }
 
 .batik-manes h3 {
+    color: #f7d8a4;
     font-size: 1.3em;
     font-weight: normal;
     margin-bottom: 30px;
@@ -286,7 +287,7 @@ nav a:hover {
 
 .koleksi-batik {
     background-color: #5b2c1e;
-    color: #fff;
+    color: #f7d8a4;
     text-align: center;
     padding: 80px 20px 60px;
 }
@@ -823,7 +824,6 @@ nav ul li a {
 
   .batik-manes h3 {
     font-size: 16px;
-    color: #ddd;
     margin-bottom: 15px;
   }
 
@@ -922,7 +922,6 @@ nav ul li a {
 
   .koleksi-batik h3 {
     font-size: 15px;
-    color: #fff;
     margin-bottom: 25px;
     line-height: 1.6;
   }

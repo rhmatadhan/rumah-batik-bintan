@@ -123,14 +123,14 @@ nav a:hover {
 
 .contact-card {
     text-decoration: none;
-    color: #F2E5D3;
+    color: #f7d8a4;
     text-align: center;
     width: 150px;
 }
 
 .contact-card i {
     font-size: 34px;
-    background: #F3D8B0;
+    background: #f7d8a4;
     color: #63340D;
     width: 85px;
     height: 85px;
@@ -316,7 +316,6 @@ nav ul li a {
 .contact-content h1 {
     font-size: 95px; /* lebih besar */
     font-weight: 800;
-    color: #fff;
     margin-bottom: 25px;
     line-height: 1.1;
 }
